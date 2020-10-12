@@ -8,32 +8,33 @@ namespace Marmot.Core.Interfaces
     public interface IComponent
     {
         /// <summary>
-        /// Name
-        /// </summary>
-        public string Name { get; }
-
-        /// <summary>
         /// BeforeStart
         /// </summary>
         /// <returns></returns>
-        public Task BeforeStart();
+        Task BeforeStart();
 
         /// <summary>
         /// Start
         /// </summary>
         /// <returns></returns>
-        public Task Start();
+        Task Start();
 
         /// <summary>
         /// AfterStart
         /// </summary>
         /// <returns></returns>
-        public Task AfterStart();
+        Task AfterStart();
 
         /// <summary>
-        /// stop
+        /// AfterStartAll
         /// </summary>
         /// <returns></returns>
-        public Task Stop();
+        Task AfterStartAll();
+
+        /// <summary>
+        /// Stop
+        /// </summary>
+        /// <returns></returns>
+        Task Stop();
     }
 }

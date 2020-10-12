@@ -300,7 +300,7 @@ namespace Marmot.Core.Util
         /// <summary>
         /// Error
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="exception"></param>
         public static void Error(Exception exception)
         {
             try
